@@ -10,6 +10,7 @@ echo "################ Unneeded packages removed #############################"
 echo
 echo "################ Starting Install Essentials ###########################"
 dpkg -s python-dev 2>/dev/null >/dev/null || sudo apt-get -y install python-dev
+dpkg -s python-tk 2>/dev/null >/dev/null || sudo apt-get -y install python-tk
 dpkg -s build-essential 2>/dev/null >/dev/null || sudo apt-get -y install build-essential
 echo "################ Essentials Install Complete ###########################"
 echo 
