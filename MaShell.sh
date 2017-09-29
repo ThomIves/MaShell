@@ -17,6 +17,11 @@ echo "################ Installing Sublime ####################################"
 dpkg -s sublime-text 2>/dev/null >/dev/null || sudo apt-get -y install sublime-text
 echo "################ Sublime Install Complete ##############################"
 echo 
+echo "################ Installing Maxima #####################################"
+dpkg -s maxima 2>/dev/null >/dev/null || sudo apt-get -y install maxima
+dpkg -s wxmaxima 2>/dev/null >/dev/null || sudo apt-get -y install wxmaxima
+echo "################ Maxima Install Complete ###############################"
+echo 
 echo "################ Installing Dropbox ####################################"
 dpkg -s dropbox 2>/dev/null >/dev/null || sudo apt-get -y install dropbox
 dpkg -s nemo-dropbox 2>/dev/null >/dev/null || sudo apt-get -y install nemo-dropbox
