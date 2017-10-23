@@ -1,7 +1,7 @@
 # shtuff.sh
 echo "Hello Thom"
 echo "################ Starting Update #######################################"
-echo 'UnumDeum73!' | sudo -S apt-get update
+echo 'YourPassword' | sudo -S apt-get update
 echo "################ Update Complete #######################################"
 echo
 echo "################ Removed unneeded packages #############################"
