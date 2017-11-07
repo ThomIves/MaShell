@@ -1,7 +1,7 @@
-# shtuff.sh
-echo "Hello Thom"
+# MaShell.sh
+echo "Hello Name"
 echo "################ Starting Update #######################################"
-echo 'YourPassword' | sudo -S apt-get update
+echo 'YourPasswordHere' | sudo -S apt-get update
 echo "################ Update Complete #######################################"
 echo
 echo "################ Removed unneeded packages #############################"
@@ -16,6 +16,10 @@ echo "################ Essentials Install Complete ###########################"
 echo 
 echo "################ Installing Sublime ####################################"
 dpkg -s sublime-text 2>/dev/null >/dev/null || sudo apt-get -y install sublime-text
+echo "################ Sublime Install Complete ##############################"
+echo 
+echo "################ Installing git ########################################"
+dpkg -s sublime-text 2>/dev/null >/dev/null || sudo apt-get -y install git
 echo "################ Sublime Install Complete ##############################"
 echo 
 echo "################ Installing Maxima #####################################"
