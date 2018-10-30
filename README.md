@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/ThomIves/MaShell/MaShellLogo.png)
+![Logo of the project](https://github.com/ThomIves/MaShell/sample_logo.png)
 
 # MaShell
 > A text user interface set of bash scripts used for storing install and removal routines and subsequently supplying rapid recovery of existing linux machines OR rapidly bringing up new linux machines.
