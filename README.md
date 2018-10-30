@@ -1,6 +1,6 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Logo of the project](https://github.com/ThomIves/MaShell/MaShellLogo.png)
 
-# Name of the project
+# MaShell
 > A text user interface set of bash scripts used for storing install and removal routines and subsequently supplying rapid recovery of existing linux machines OR rapidly bringing up new linux machines.
 
 When there would be a need to bring up a new linux system for whatever reason, I no longer wanted to repeat work that could appropriately be stored in an easy text user interface set of bash scripts that were easy to maintain.
