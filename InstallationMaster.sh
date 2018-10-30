@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Originally from https://github.com/ThomIves/MaShell PLEASE KEEP THIS HERE - THANKS!
+
 ####### Function definition section ####################################
 ###
 groupsMenu () {
