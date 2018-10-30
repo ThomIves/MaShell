@@ -1,0 +1,5 @@
+#!/bin/bash
+
+prereqs="$1"
+
+eval "$prereqs"

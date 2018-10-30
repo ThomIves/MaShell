@@ -1,0 +1,31 @@
+#!/bin/bash
+
+grep 'export PATH=' ~/.profile > scrapPile.txt
+exportPresent=$?
+
+if [ $exportPresent -eq 0 ]
+then
+    echo "There is an export statement"
+    echo "   ... checking for .npm-global in path"
+
+    grep '~/.npm-global/bin:' ./scrapPile.txt >/dev/null
+    npmGlobalPresent=$?
+
+    if [ $npmGlobalPresent -eq 0 ]
+    then 
+        echo "The path to .npm-global is provided"
+        echo "   ... everything is good to go for node packages"
+    else
+        echo The path to .npm-global is NOT provided
+        echo "   ... adding ~/.npm-global/bin to PATH exports"
+        sed -i 's/export PATH=/export PATH=~\/.npm-global\/bin:/' ~/.profile
+    fi
+else
+    echo "There was NOT an export statement"
+    echo "   ... adding export statement for PATH including ~/.npm-global/bin"
+    echo ' ' >> ~/.profile
+    echo '# Adding location of node package manager to avoid needing sudo' >> ~/.profile
+    echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.profile
+fi
+
+rm ./scrapPile.txt

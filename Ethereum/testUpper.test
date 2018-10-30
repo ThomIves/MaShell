@@ -1,0 +1,12 @@
+#!/bin/bash
+
+prereqs='
+pwd
+mainDir=$(pwd)
+cd ~/Downloads
+pwd
+cd "$mainDir"
+pwd
+'
+
+./testLower.test "$prereqs"
