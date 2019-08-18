@@ -17,6 +17,10 @@ else
 fi
 mkvirtualenv py27std
 pip install -r requirements.txt
+deactivate
+mkvirtualenv --python=python3 py36std
+pip install -r requirements.txt
+deactivate
 '
 
 specialRemoval=""
