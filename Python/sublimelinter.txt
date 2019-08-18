@@ -1,0 +1,8 @@
+// SublimeLinter Settings - User
+{
+    "linters": {
+        "pycodestyle": {
+            "python": "C:\\Users\\24601\\Envs\\py37std\\Scripts\\python.exe"
+        }
+    }
+}
