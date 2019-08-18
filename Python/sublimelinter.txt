@@ -1,8 +1,10 @@
 // SublimeLinter Settings - User
 {
     "linters": {
+        // The name of the linter you installed
         "pycodestyle": {
-            "python": "C:\\Users\\24601\\Envs\\py37std\\Scripts\\python.exe"
+            "python": "~/.virtualenvs/py36std/bin/python",
         }
-    }
+    },
 }
+
