@@ -15,17 +15,18 @@ else
     echo "source /usr/share/virtualenvwrapper/virtualenvwrapper.sh" >> ~/.bashrc
     echo source ~/.bashrc
 fi
+'
+
+specialRemoval=""
+
+postreqs="
 mkvirtualenv py27std
 pip install -r requirements.txt
 deactivate
 mkvirtualenv -p /usr/bin/python3 py36std
 pip install -r requirements.txt
 deactivate
-'
-
-specialRemoval=""
-
-postreqs=""
+"
 
 ./SinglePackageManager.sh "$prereqs" \
                           "$package" \
