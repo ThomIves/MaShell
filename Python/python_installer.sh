@@ -20,6 +20,7 @@ fi
 specialRemoval=""
 
 postreqs="
+source ~/.bashrc
 mkvirtualenv py27std
 pip install -r requirements.txt
 deactivate
