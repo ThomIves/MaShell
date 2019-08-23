@@ -5,9 +5,7 @@ prereqs=""
 package="dropbox nemo-dropbox"
 
 specialInstall="dropbox start -i && 
-read -p 'Press Enter once dropbox is installed.' && 
-dropbox exclude add * && 
-dropbox exclude remove ~/Dropbox/Catholic/NuntiiDei"
+read -p 'Press Enter once dropbox is installed.'"
 
 specialRemoval="dropbox stop"
 
