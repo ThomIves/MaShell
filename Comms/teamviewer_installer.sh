@@ -4,9 +4,10 @@ prereqs=""
 
 package="teamviewer"
 
-specialInstall="wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb &&
+specialInstall="wget -q -P ~/Downloads/ https://download.teamviewer.com/download/linux/teamviewer_amd64.deb &&
 sudo dpkg -i teamviewer_amd64.deb;
-sudo apt-get -f install"
+sudo apt-get -f install;
+rm ~/Downloads/teamviewer_amd64.deb"
 
 specialRemove=""
 

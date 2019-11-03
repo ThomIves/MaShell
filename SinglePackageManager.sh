@@ -28,6 +28,8 @@ if [ $out -eq 1 ]; then
         eval "$specialInstall"
     fi
 
+# Add in a "sudo apt-get install -f -y"
+
 # If it is present, ask about removing it.
 elif [ $out -eq 0 ]; then
     echo $package is installed. Do you want to remove it?

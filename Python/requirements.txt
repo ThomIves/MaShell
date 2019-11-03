@@ -5,11 +5,12 @@ idna
 numpy
 pandas
 pkg-resources
+pycodestyle
 pydub
 pymongo
 python-dateutil
 pytz
 requests
 six
+soupsieve
 urllib3
-pycodestyle
