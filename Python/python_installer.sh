@@ -2,7 +2,7 @@
 
 prereqs=""
 
-package="python-dev python-tk build-essential python-virtualenv virtualenvwrapper"
+package="python3-dev python3-tk build-essential python3-virtualenv virtualenvwrapper"
 
 specialInstall='
 if grep -q "virtualenvwrapper.sh" "/home/thom/.bashrc"; then  
