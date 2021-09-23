@@ -19,15 +19,7 @@ fi
 
 specialRemoval=""
 
-postreqs="
-source ~/.bashrc
-mkvirtualenv py27std
-pip install -r requirements.txt
-deactivate
-mkvirtualenv -p /usr/bin/python3 py36std
-pip install -r requirements.txt
-deactivate
-"
+postreqs=""
 
 ./SinglePackageManager.sh "$prereqs" \
                           "$package" \
